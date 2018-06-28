@@ -1,0 +1,9 @@
+# VacationTrackingSystem
+open mySql
+create a DB company ant then;
+create database company;
+use company;
+create table users(name varchar(50),user_id varchar(50),password varchar(50),manager_id varchar(50),date_of_joining Date);
+insert into users value('Admin','admin@abc.com','admin@123',null,null);
+create table leaves(name varchar(30),user_id varchar(50),manager_id varchar(50),start Date,end Date,days int,yearol int,status varchar(50));
+create table leave_request(user_id varchar(50),start Date,end Date,manager_id varchar(50),days mediumtext);
